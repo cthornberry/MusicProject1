@@ -100,7 +100,9 @@ textarea {
 
 body{
   font-family: 'Actor', sans-serif;
+  overflow-x: hidden;
 }
+
 
 h2{
   background-color: #E6EB12;
@@ -136,12 +138,53 @@ h2{
      color: #000;
    }
 
+   .links{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+   }
+
+   .logicavatar{
+   }
+
+   .linksbox{
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 0 auto;
+
+   }
+
+   .linksbox a{
+     padding: 1%;
+     font-size: 30px;
+     color: #000;
+     text-decoration: none;
+     background-color: #E6EB12;
+     padding: 5px;
+     margin: 3%;
+   }
+
+   .logicavatar img{
+     	border-radius: 50%;
+      width: 395px;
+      height: 415px;
+       margin: 5% 0 5% 0;
+   }
+
    .about{
      width: 90%;
      display: flex;
-     align-items: right;
+     justify-content: center;
+     align-items: center;
      margin: 0 auto;
      flex-direction: column;
+     position: relative;
+     margin-bottom: 15px;
    }
 
     .about h2{
@@ -149,6 +192,21 @@ h2{
       font-size: 70px
       color:#000;
       text-align: right;
+    }
+
+    .centerme{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .centerme img{
+      align-items: center;
+      margin: 20px;
+      width: 100%;
+
     }
 
     .music h2{
@@ -162,9 +220,12 @@ h2{
     .music{
       width: 90%;
       display: flex;
-      align-items: left;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
       flex-direction: column;
+      position: relative;
+      margin-bottom: 15px;
     }
 
     .record_lable h2{
@@ -178,11 +239,30 @@ h2{
     .record_lable{
       width: 90%;
       display: flex;
-      align-items: right;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
       flex-direction: column;
+      position: relative;
+      margin-bottom: 15px;
+
     }
 
+.studio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.studio img{
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+
+}
 
     .tours h2{
       font-family: 'Actor', Regular;
@@ -195,9 +275,12 @@ h2{
     .tours{
       width: 90%;
       display: flex;
-      align-items: left;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
       flex-direction: column;
+      position: relative;
+      margin-bottom: 15px;
     }
 
     table{
@@ -245,6 +328,7 @@ h2{
       color:#000;
       text-align: left;
 
+
     }
 
     .shopping{
@@ -258,6 +342,21 @@ h2{
       margin-bottom: 15px;
     }
 
+.tshirts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.tshirts img{
+  align-items: center;
+  margin: 20;
+  width: 100%;
+
+}
     table{
     border: 0px !important;
     }
@@ -375,9 +474,46 @@ h2{
    Modify as content requires.
    ========================================================================== */
 
+
+
+   @media screen and (max-width: 1000px) {
+
+   }
+
+   /* On screens that are 900px wide or less */
+   @media screen and (max-width: 900px) {
+
+   }
+
+   /* On screens that are 768px wide or less */
+   @media screen and (max-width: 768px) {
+
+   }
+
+   /* On screens that are 550px wide or less */
+   @media screen and (max-width: 550px) {
+
+   }
+
+   /* On screens that are 450px wide or less */
+   @media screen and (max-width: 450px) {
+
+   }
+
+   /* On screens that are 300px wide or less */
+   @media screen and (max-width: 300px) {
+
+   }
+
 @media only screen and (min-width: 35em) {
+
+   }
+
+
+
+
   /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
