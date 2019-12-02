@@ -111,14 +111,19 @@ h2{
 
 .logicshadow{
   box-shadow: 15px 15px rgba(142,220,254,1);
+  width: 20%;
 }
 
 .logicshadow2{
   box-shadow: -15px -15px rgba(142,220,254,1);
+  width: 20%;
+  position: relative;
+  right: 0px;
 }
 
 .logicshadow3{
   box-shadow: 25px -30px rgba(142,220,254,1);
+  width: 20%;
 }
 
 
@@ -143,31 +148,68 @@ h2{
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin: 0 auto;
+     margin-top: 3%;
+     margin-bottom: 3%;
    }
 
-   .logicavatar{
+   .largesection{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     flex-direction: column;
    }
+
+   .largesection p{
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: left;
+     flex-direction: column;
+   }
+
 
    .linksbox{
-     width: 90%;
+     width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      margin: 0 auto;
-
    }
 
-   .linksbox a{
+   .linksboxright a,
+   .linksboxleft a{
      padding: 1%;
      font-size: 30px;
      color: #000;
      text-decoration: none;
      background-color: #E6EB12;
      padding: 5px;
-     margin: 3%;
+     flex-direction: column;
+     display: flex;
+     width: 500px;
+     justify-content: space-between;
    }
+
+   .linksboxleft a{
+     margin: 3% 0 3% 0;
+     padding-left: 15px;
+   }
+
+   
+   .linksboxright a{
+    margin: 3% 0 3% 0;
+    padding-right: 15px;
+    text-align: right;
+  }
+
+  .linksboxleft a:hover,
+  .linksboxright a:hover{
+    color: #fff;
+    background-color: #8EDCFE;
+  }
 
    .logicavatar img{
      	border-radius: 50%;
@@ -340,8 +382,6 @@ h2{
       flex-direction: column;
       position: relative;
       margin-bottom: 15px;
-
-
     }
 
 
@@ -377,13 +417,111 @@ h2{
 
     .leftside{
       position: relative;
-      left: 400px;
+      left: 82%;
     }
 
     .rightside{
       position: relative;
-      right: 400px;
+      right: 0px;
     }
+
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 5%;
+  display: block;
+  right: 50%;
+  left: 30%;
+}
+
+/* Hide the images by default */
+.merch {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 
@@ -480,36 +618,91 @@ h2{
 
 
 
-   @media screen and (max-width: 1000px) {
+   @media only screen and (max-width: 1000px) {
+     .centerme{
+       flex-direction: column;
+     }
+
+     .slideshow-container {
+      right: 50%;
+      left: 12%;
+    }
+
+    .logicshadow{
+      width: 50%;
+    }
+
+    .linksboxright a,
+    .linksboxleft a{
+      width: 200px;
+      justify-content: space-between;
+    }
 
    }
 
    /* On screens that are 900px wide or less */
-   @media screen and (max-width: 900px) {
+   @media only screen and (max-width: 900px) {
+
+    .slideshow-container {
+      right: 50%;
+      left: 12%;
+    }
+
+    .logicshadow{
+      width: 55%;
+    }
+
+    .linksboxright a,
+    .linksboxleft a{
+      width: 150px;
+    }
+
+    .logicavatar{
+      width: 50%;
+    }
 
    }
 
    /* On screens that are 768px wide or less */
-   @media screen and (max-width: 768px) {
+   @media only screen and (max-width: 768px) {
+
+    .slideshow-container {
+      right: 50%;
+      left: 3%;
+    }
+
+    .logicshadow{
+      width: 55%;
+    }
+
+    .linksboxright a,
+    .linksboxleft a{
+      width: 190px;
+    }
+
+    .logicavatar{
+      width: 30%;
+    }
+
+    .logicavatar img{
+      width: 200px;
+      height: 220px;
+    }
 
    }
 
    /* On screens that are 550px wide or less */
-   @media screen and (max-width: 550px) {
+   @media only screen and (max-width: 550px) {
 
    }
 
    /* On screens that are 450px wide or less */
-   @media screen and (max-width: 450px) {
+   @media only screen and (max-width: 450px) {
 
    }
 
    /* On screens that are 300px wide or less */
-   @media screen and (max-width: 300px) {
-
-   }
-
-@media only screen and (min-width: 35em) {
+   @media only screen and (max-width: 300px) {
 
    }
 
